@@ -89,8 +89,8 @@ h1 {
     width: 12px;
     height: 12px;
     background-color: #7BA05B;
-    border-radius: 50%;
-    margin-top: 8px;
+    border-radius: 100%;
+    margin-top: 20px;
 }
 
 .username {
@@ -342,4 +342,34 @@ footer {
     .description {
         font-size: 16px;
     }
+}
+.setup-category h2,
+.setup-item .name,
+.setup-item .description {
+    text-align: left;
+}
+.contact-intro {
+    text-align: center;
+    color: #666666;
+    margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-links {
+    text-align: center;
+}
+
+.contact-links a {
+    color: #000000;
+    text-decoration: none;
+    margin: 0 20px;
+    font-weight: 500;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
 }
