@@ -31,6 +31,7 @@ nav {
     display: flex;
     justify-content: center;
     gap: 40px;
+    align-items: center;
 }
 
 nav a {
@@ -44,6 +45,31 @@ nav a {
 nav a:hover,
 nav a.active {
     color: #000000;
+}
+
+/* Favicon icon styling */
+.nav-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-icon img {
+    width: 20px;
+    height: 20px;
+    transition: all 0.2s ease;
+}
+
+.nav-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(77%) sepia(86%) saturate(2476%) hue-rotate(3deg) brightness(101%) contrast(107%);
+}
+
+.nav-icon.active img {
+    opacity: 1;
+}
+
+.nav-icon:not(.active) img {
+    opacity: 0.6;
 }
 
 /* Page Sections */
@@ -362,6 +388,11 @@ footer {
 
     .bio p {
         font-size: 14px;
+    }
+
+    .nav-icon img {
+        width: 18px;
+        height: 18px;
     }
 }
 
