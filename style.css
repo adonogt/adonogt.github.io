@@ -427,3 +427,329 @@ footer {
 .contact-links a:hover {
     text-decoration: underline;
 }
+* Blog Post Specific Styles */
+
+/* Post Article Container */
+.post-article {
+    flex: 1;
+    padding: 0;
+    max-width: 100%;
+}
+
+/* Post Header Structure */
+.post-header {
+    margin-bottom: 48px;
+    text-align: center;
+    border-bottom: 1px solid #e5e5e5;
+    padding-bottom: 32px;
+}
+
+.post-date {
+    color: #888888;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 12px;
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+}
+
+.post-title {
+    font-size: 36px;
+    font-weight: 700;
+    color: #000000;
+    margin: 0 0 24px 0;
+    line-height: 1.2;
+}
+
+.post-meta {
+    margin-top: 24px;
+}
+
+.back-link {
+    color: #666666;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.back-link:hover {
+    color: #000000;
+}
+
+/* Post Content Styling */
+.post-content {
+    max-width: 100%;
+    margin: 0 auto;
+    line-height: 1.7;
+}
+
+.post-content h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #000000;
+    margin: 48px 0 24px 0;
+    line-height: 1.3;
+}
+
+.post-content h3 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #111111;
+    margin: 36px 0 18px 0;
+    line-height: 1.4;
+}
+
+.post-content h4 {
+    font-size: 20px;
+    font-weight: 500;
+    color: #222222;
+    margin: 28px 0 16px 0;
+    line-height: 1.4;
+}
+
+.post-content p {
+    margin-bottom: 20px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.7;
+    text-align: justify;
+    hyphens: auto;
+}
+
+.post-content p:last-child {
+    margin-bottom: 0;
+}
+
+/* Code Blocks Styling */
+.post-content pre {
+    background-color: #f8f9fa;
+    border: 1px solid #e9ecef;
+    border-radius: 6px;
+    padding: 20px;
+    margin: 24px 0;
+    overflow-x: auto;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #212529;
+}
+
+.post-content code {
+    background-color: #f1f3f4;
+    color: #d73a49;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 14px;
+}
+
+/* Code inside pre blocks shouldn't have background */
+.post-content pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* Syntax highlighting for specific languages */
+.post-content pre[class*="language-"] {
+    background-color: #1e1e1e;
+    color: #d4d4d4;
+    border: 1px solid #3c3c3c;
+}
+
+.post-content pre.bash,
+.post-content pre.shell {
+    background-color: #2d3748;
+    color: #e2e8f0;
+    border: 1px solid #4a5568;
+}
+
+.post-content pre.c,
+.post-content pre.cpp {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    border: 1px solid #30363d;
+}
+
+/* Lists in post content */
+.post-content ul,
+.post-content ol {
+    margin: 20px 0;
+    padding-left: 24px;
+}
+
+.post-content li {
+    margin-bottom: 8px;
+    color: #333333;
+    line-height: 1.6;
+}
+
+/* Blockquotes */
+.post-content blockquote {
+    border-left: 4px solid #e9ecef;
+    padding-left: 20px;
+    margin: 24px 0;
+    color: #666666;
+    font-style: italic;
+    background-color: #f8f9fa;
+    padding: 16px 20px;
+    border-radius: 0 6px 6px 0;
+}
+
+/* Links in post content */
+.post-content a {
+    color: #0366d6;
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: all 0.2s ease;
+}
+
+.post-content a:hover {
+    color: #0056b3;
+    border-bottom-color: #0056b3;
+}
+
+/* Images in post content */
+.post-content img {
+    max-width: 100%;
+    height: auto;
+    margin: 24px auto;
+    display: block;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Tables */
+.post-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 24px 0;
+    font-size: 14px;
+}
+
+.post-content th,
+.post-content td {
+    border: 1px solid #e9ecef;
+    padding: 12px;
+    text-align: left;
+}
+
+.post-content th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Special styling for command explanations */
+.post-content .command-explanation {
+    background-color: #e7f3ff;
+    border-left: 4px solid #0366d6;
+    padding: 16px;
+    margin: 16px 0;
+    border-radius: 0 4px 4px 0;
+}
+
+.post-content .command-explanation p {
+    margin-bottom: 0;
+    color: #0366d6;
+    font-size: 14px;
+}
+
+/* Warning/Note boxes */
+.post-content .warning {
+    background-color: #fff3cd;
+    border: 1px solid #ffeaa7;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 24px 0;
+}
+
+.post-content .note {
+    background-color: #d1ecf1;
+    border: 1px solid #bee5eb;
+    border-radius: 6px;
+    padding: 16px;
+    margin: 24px 0;
+}
+
+/* File path styling */
+.post-content .file-path {
+    background-color: #f8f9fa;
+    color: #6f42c1;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Terminal command styling */
+.post-content .terminal-command {
+    background-color: #2d3748;
+    color: #68d391;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/* Responsive adjustments for mobile */
+@media (max-width: 768px) {
+    .post-title {
+        font-size: 28px;
+    }
+    
+    .post-content h2 {
+        font-size: 24px;
+        margin: 36px 0 20px 0;
+    }
+    
+    .post-content h3 {
+        font-size: 20px;
+        margin: 28px 0 16px 0;
+    }
+    
+    .post-content pre {
+        padding: 16px;
+        font-size: 13px;
+        margin: 20px -10px;
+        border-radius: 0;
+    }
+    
+    .post-content p {
+        text-align: left;
+        hyphens: none;
+    }
+    
+    .post-header {
+        padding-bottom: 24px;
+        margin-bottom: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .post-title {
+        font-size: 24px;
+    }
+    
+    .post-content {
+        font-size: 15px;
+    }
+    
+    .post-content h2 {
+        font-size: 22px;
+    }
+    
+    .post-content h3 {
+        font-size: 18px;
+    }
+    
+    .post-content pre {
+        padding: 12px;
+        font-size: 12px;
+        margin: 16px -20px;
+    }
+}
