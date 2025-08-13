@@ -1,0 +1,357 @@
+/* ==============================================
+   LAYOUT & GRID SYSTEMS
+   ============================================== */
+
+.container {
+    max-width: var(--container-max-width);
+    margin: 0 auto;
+    padding: 0 var(--spacing-lg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ==============================================
+   HEADER & NAVIGATION
+   ============================================== */
+
+header {
+    padding: var(--spacing-3xl) 0 var(--spacing-5xl);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-3xl);
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--color-light);
+    font-size: var(--font-size-medium);
+    font-weight: 400;
+    cursor: pointer;
+}
+
+nav a:hover,
+nav a.active {
+    color: var(--color-primary);
+}
+
+/* Favicon icon styling */
+.nav-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-icon img {
+    width: var(--spacing-lg);
+    height: var(--spacing-lg);
+    transition: all var(--transition-base);
+}
+
+.nav-icon:hover img {
+    filter: brightness(0) saturate(100%) invert(77%) sepia(86%) saturate(2476%) hue-rotate(3deg) brightness(101%) contrast(107%);
+}
+
+.nav-icon.active img {
+    opacity: 1;
+}
+
+.nav-icon:not(.active) img {
+    opacity: 0.6;
+}
+
+/* ==============================================
+   PAGE STRUCTURE
+   ============================================== */
+
+.page {
+    display: none;
+    flex: 1;
+}
+
+.page.active {
+    display: block;
+}
+
+.page-content {
+    padding: var(--spacing-lg) 0;
+}
+
+.page-title {
+    font-size: var(--font-size-3xl);
+    font-weight: 700;
+    margin-bottom: var(--spacing-3xl);
+    text-align: center;
+}
+
+.section {
+    margin-bottom: var(--spacing-3xl);
+}
+
+/* ==============================================
+   HOME/ABOUT CONTENT
+   ============================================== */
+
+.home-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.content {
+    text-align: center;
+    max-width: 600px;
+}
+
+.ascii-art-container {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.ascii-art-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.description {
+    font-size: var(--font-size-base);
+    color: var(--color-primary);
+    margin-bottom: var(--spacing-2xl);
+    font-weight: 400;
+    text-align: center;
+}
+
+.bio {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.bio p {
+    color: var(--color-muted);
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-base);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+}
+
+.bio p:last-child {
+    margin-bottom: 0;
+}
+
+/* ==============================================
+   SOCIAL & CONTACT LINKS
+   ============================================== */
+
+.social-links {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+}
+
+.social-links a {
+    color: var(--color-light);
+    text-decoration: none;
+    font-size: var(--font-size-medium);
+}
+
+.social-links a:hover {
+    color: var(--color-primary);
+}
+
+.contact-intro {
+    text-align: center;
+    color: var(--color-muted);
+    margin-bottom: var(--spacing-3xl);
+    font-size: var(--font-size-medium);
+    line-height: var(--line-height-base);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact-links {
+    text-align: center;
+}
+
+.contact-links a {
+    color: var(--color-primary);
+    text-decoration: none;
+    margin: 0 var(--spacing-lg);
+    font-weight: 500;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================================
+   PROJECTS SECTION
+   ============================================== */
+
+.project {
+    margin-bottom: var(--spacing-2xl);
+}
+
+.project .tech-stack {
+    color: var(--color-light);
+    font-size: var(--font-size-small);
+    margin-bottom: var(--spacing-xs);
+}
+
+.project h3 {
+    margin-bottom: var(--spacing-xs);
+}
+
+.project h3 a {
+    color: var(--color-secondary);
+    text-decoration: none;
+}
+
+.project h3 a:hover {
+    color: var(--color-primary);
+    text-decoration: underline;
+}
+
+/* ==============================================
+   SETUP SECTION
+   ============================================== */
+
+.setup-category {
+    margin-bottom: var(--spacing-3xl);
+}
+
+.setup-list {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--spacing-md);
+}
+
+.setup-list li {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.5;
+}
+
+.setup-item .name {
+    font-weight: 500;
+    color: var(--color-primary);
+    margin-bottom: 2px;
+    padding-left: var(--spacing-lg);
+    position: relative;
+}
+
+.setup-item .name a {
+    color: var(--color-primary);
+    text-decoration: none;
+}
+
+.setup-item .name a:hover {
+    color: var(--color-muted);
+    text-decoration: underline;
+}
+
+.setup-item .name:before {
+    content: "•";
+    color: var(--color-light);
+    font-size: var(--spacing-lg);
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: var(--spacing-md);
+    text-align: center;
+}
+
+.setup-item-content {
+    width: 100%;
+}
+
+.setup-item .description {
+    color: var(--color-muted);
+    font-size: var(--font-size-small);
+    line-height: 1.4;
+}
+
+.setup-category h2,
+.setup-item .name,
+.setup-item .description {
+    text-align: left;
+}
+
+/* ==============================================
+   FOOTER
+   ============================================== */
+
+footer {
+    padding: var(--spacing-3xl) 0 30px;
+    margin-top: auto;
+}
+
+.copyright {
+    color: var(--color-light);
+    font-size: var(--font-size-small);
+    text-align: center;
+}
+
+/* ==============================================
+   RESPONSIVE LAYOUT
+   ============================================== */
+
+@media (max-width: 768px) {
+    .container {
+        padding: 0 var(--spacing-lg);
+    }
+
+    nav {
+        gap: 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .ascii-art-image {
+        max-width: 90%;
+    }
+
+    .bio p {
+        font-size: 15px;
+    }
+
+    .social-links {
+        gap: var(--spacing-md);
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 30px 0 50px;
+    }
+
+    nav {
+        gap: var(--spacing-xl);
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .ascii-art-image {
+        max-width: 85%;
+    }
+
+    .bio p {
+        font-size: var(--font-size-small);
+    }
+
+    .nav-icon img {
+        width: 18px;
+        height: 18px;
+    }
+}

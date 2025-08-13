@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - グスターボ</title>
+    <link rel="icon" href="../assets/images/favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Noto+Sans+JP:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/layout.css">
+    <link rel="stylesheet" href="../assets/css/projects.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <nav>
+                <a href="../index.html" class="nav-link nav-icon">
+                    <img src="../assets/images/favicon.png" alt="About" title="グスターボ">
+                </a>
+                <a href="../blog/index.html" class="nav-link">blog</a>
+                <a href="index.html" class="nav-link active">projects</a>
+                <a href="../gear.html" class="nav-link">gear</a>
+                <a href="../contact.html" class="nav-link">contact</a>
+            </nav>
+        </header>
+
+        <!-- projects page -->
+        <div class="page active">
+            <div class="page-content">
+                <h1 class="page-title">projects</h1>
+                
+                <div class="project">
+                    <div class="tech-stack">esp32, freertos, mqtt, c/c++</div>
+                    <h3><a href="smart-home-hub.html">smart home automation hub</a></h3>
+                    <p>central hub for home automation using esp32 microcontroller. features include sensor data collection, device control via mqtt, and web-based dashboard. implements secure ota updates and low-power modes.</p>
+                </div>
+
+                <div class="project">
+                    <div class="tech-stack">stm32, can bus, automotive protocols</div>
+                    <h3><a href="automotive-diagnostic-tool.html">automotive diagnostic tool</a></h3>
+                    <p>portable diagnostic tool for automotive applications using stm32 microcontroller and can bus communication. supports obd-ii protocols and custom manufacturer diagnostics.</p>
+                </div>
+
+                <div class="project">
+                    <div class="tech-stack">c, embedded linux, i2c/spi</div>
+                    <h3><a href="sensor-data-logger.html">multi-sensor data logger</a></h3>
+                    <p>compact data logging system for environmental monitoring. supports multiple sensor interfaces and provides real-time data visualization through a web interface.</p>
+                </div>
+
+                <div class="project">
+                    <div class="tech-stack">arm cortex-m, real-time systems</div>
+                    <h3><a href="motor-control-system.html">precision motor control system</a></h3>
+                    <p>high-precision motor control system for robotics applications. implements advanced control algorithms with real-time feedback and safety mechanisms.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <div class="copyright">
+                アドノグスターボ © 2025
+            </div>
+        </footer>
+    </div>
+
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>

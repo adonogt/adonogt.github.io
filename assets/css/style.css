@@ -1,0 +1,193 @@
+/* ==============================================
+   GLOBAL VARIABLES & BASE STYLES
+   ============================================== */
+
+/* CSS Custom Properties (Variables) */
+:root {
+    /* Colors */
+    --color-primary: #000000;
+    --color-secondary: #333333;
+    --color-tertiary: #444444;
+    --color-muted: #666666;
+    --color-light: #888888;
+    --color-lighter: #e5e5e5;
+    --color-background: #ffffff;
+    --color-code-bg: #f8f9fa;
+    --color-code-border: #e9ecef;
+    --color-code-text: #d73a49;
+    --color-link: #0366d6;
+    --color-link-hover: #0056b3;
+
+    /* Typography */
+    --font-family-primary: 'Inter', 'Noto Sans JP', sans-serif;
+    --font-family-mono: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+    --font-size-base: 18px;
+    --font-size-small: 14px;
+    --font-size-medium: 16px;
+    --font-size-large: 20px;
+    --font-size-xl: 24px;
+    --font-size-2xl: 28px;
+    --font-size-3xl: 32px;
+    --font-size-4xl: 36px;
+    --font-size-5xl: 42px;
+    --line-height-base: 1.6;
+    --line-height-tight: 1.2;
+    --line-height-relaxed: 1.7;
+
+    /* Spacing */
+    --spacing-xs: 8px;
+    --spacing-sm: 12px;
+    --spacing-md: 16px;
+    --spacing-lg: 20px;
+    --spacing-xl: 24px;
+    --spacing-2xl: 32px;
+    --spacing-3xl: 40px;
+    --spacing-4xl: 48px;
+    --spacing-5xl: 60px;
+
+    /* Layout */
+    --container-max-width: 800px;
+    --border-radius-sm: 3px;
+    --border-radius-md: 6px;
+    --transition-base: 0.2s ease;
+}
+
+/* ==============================================
+   RESET & BASE STYLES
+   ============================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-family-primary);
+    background-color: var(--color-background);
+    color: var(--color-primary);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-base);
+}
+
+/* ==============================================
+   TYPOGRAPHY
+   ============================================== */
+
+h1 {
+    font-size: var(--font-size-5xl);
+    font-weight: 700;
+    color: var(--color-primary);
+    margin: 0 0 var(--spacing-xl) 0;
+    line-height: var(--line-height-tight);
+}
+
+h2 {
+    font-size: var(--font-size-xl);
+    font-weight: 500;
+    margin-bottom: var(--spacing-md);
+    color: var(--color-primary);
+}
+
+h3 {
+    font-size: var(--font-size-large);
+    font-weight: 500;
+    margin-bottom: var(--spacing-sm);
+    color: var(--color-secondary);
+}
+
+p {
+    margin-bottom: var(--spacing-md);
+    color: var(--color-tertiary);
+}
+
+/* ==============================================
+   LINKS
+   ============================================== */
+
+a {
+    color: var(--color-light);
+    text-decoration: none;
+    transition: color var(--transition-base);
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* ==============================================
+   LISTS
+   ============================================== */
+
+ul, ol {
+    margin-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-md);
+}
+
+li {
+    margin-bottom: var(--spacing-xs);
+    color: var(--color-tertiary);
+}
+
+/* ==============================================
+   CODE & PRE
+   ============================================== */
+
+code {
+    background-color: var(--color-code-bg);
+    color: var(--color-code-text);
+    padding: 2px 6px;
+    border-radius: var(--border-radius-sm);
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-small);
+}
+
+pre {
+    background-color: var(--color-code-bg);
+    border: 1px solid var(--color-code-border);
+    border-radius: var(--border-radius-md);
+    padding: var(--spacing-lg);
+    margin: var(--spacing-xl) 0;
+    overflow-x: auto;
+    font-family: var(--font-family-mono);
+    font-size: var(--font-size-small);
+    line-height: 1.5;
+    color: #212529;
+}
+
+pre code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border-radius: 0;
+}
+
+/* ==============================================
+   IMAGES
+   ============================================== */
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* ==============================================
+   RESPONSIVE BREAKPOINTS
+   ============================================== */
+
+@media (max-width: 768px) {
+    :root {
+        --font-size-base: 17px;
+        --font-size-5xl: 36px;
+        --font-size-3xl: 28px;
+    }
+}
+
+@media (max-width: 480px) {
+    :root {
+        --font-size-base: 16px;
+        --font-size-5xl: 32px;
+        --font-size-3xl: 24px;
+    }
+}
