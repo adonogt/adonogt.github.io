@@ -1,0 +1,108 @@
+body {
+    color: #000000;
+    font-family: var(--font-family-primary);
+    text-align: justify;
+}
+
+h1, h2, h3, h4 {
+    color: #000000;
+    text-align: justify;
+    font-weight: 700;
+    margin-bottom: var(--spacing-lg);
+    line-height: var(--line-height-tight);
+}
+
+h1 {
+    font-size: var(--font-size-5xl);
+    margin-bottom: var(--spacing-2xl);
+    text-align: left;
+}
+
+h2 {
+    font-size: var(--font-size-2xl);
+    margin-top: var(--spacing-3xl);
+    margin-bottom: var(--spacing-xl);
+}
+
+h3 {
+    font-size: var(--font-size-xl);
+    margin-top: var(--spacing-2xl);
+    margin-bottom: var(--spacing-lg);
+}
+
+h4 {
+    font-size: var(--font-size-large);
+    margin-top: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+}
+
+p {
+    color: #111111;
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    margin-bottom: var(--spacing-md);
+    text-align: justify;
+}
+
+.lead {
+    font-size: var(--font-size-large);
+    font-weight: 400;
+    color: #000000;
+    margin-bottom: var(--spacing-xl);
+    line-height: var(--line-height-relaxed);
+}
+
+.description, .date {
+    font-size: var(--font-size-medium);
+    font-style: italic;
+    color: var(--color-muted);
+    text-align: left;
+    margin-bottom: var(--spacing-lg);
+}
+
+.caption {
+    font-size: var(--font-size-small);
+    color: var(--color-light);
+    text-align: center;
+    margin-top: var(--spacing-sm);
+}
+
+.section {
+    margin-bottom: var(--spacing-4xl);
+}
+
+.section p:last-child {
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-left: var(--spacing-xl);
+    margin-bottom: var(--spacing-md);
+    text-align: justify;
+}
+
+li {
+    margin-bottom: var(--spacing-sm);
+    color: #111111;
+}
+a {
+    color: blue !important;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: darkblue !important;
+}
+
+.news-links {
+    margin: var(--spacing-xl) 0;
+}
+
+.news-links ul {
+    margin-left: var(--spacing-xl);
+    padding-left: var(--spacing-lg);
+}
+
+.news-links li {
+    margin-bottom: var(--spacing-xs);
+}
